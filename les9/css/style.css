@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+.header {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/main.jpg) no-repeat center center;
+  background-size: cover;
+}
+.header__nav {
+  height: 6rem;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+}
+.header__wrapper {
+  margin: 0 auto;
+  width: 67rem;
+  padding-top: 1.5rem;
+}
+.header__logotip {
+  position: relative;
+  display: inline-block;
+}
+.header__logo-img {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.header__logo-h3 {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #202242;
+}
+.header__logo-span {
+  font-weight: 700;
+}
+.header__nav-block {
+  display: inline-block;
+  margin-left: 6rem;
+  margin-top: -1rem;
+}
+.header__li {
+  display: inline-block;
+  padding: 0rem 0.7rem;
+  color: #202242;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.header__contacts {
+  position: absolute;
+  display: inline-block;
+  border-left: 1px solid #ebebeb;
+  color: #202242;
+  margin-left: 3rem;
+  margin-top: -1.5rem;
+  padding: 1.5rem 0rem 0rem 1rem;
+  height: 6rem;
+}
+.header__help-text {
+  color: #202242;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.header__link {
+  position: relative;
+  padding-top: 1rem;
+}
+.header__button-link {
+  display: inline-block;
+  background-color: #ffe13e;
+  border: none;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+.header__number {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-left: 2px solid #ebebeb;
+  padding-left: 1rem;
+  vertical-align: middle;
+}
+.header__main {
+  position: relative;
+  top: 15rem;
+  text-align: center;
+}
+.header__h1 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.header__p-main {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.header__img-main {
+  margin-bottom: 4rem;
+}
+.header__form-input {
+  border: 1rem solid rgba(221, 221, 221, 0.5);
+  display: inline-block;
+}
+.header__login {
+  display: inline-block;
+}
+.header__input {
+  border: none;
+  height: 2rem;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+}
+.header__block-span {
+  display: inline-block;
+}
+.header__com-span {
+  background-color: #ffe13e;
+  padding: 0.45rem 1rem 0.54rem 01em;
+  border-right: 1px solid #ebebeb;
+  font-weight: 700;
+}
+.header__main-button {
+  border: none;
+  background-color: #ffe13e;
+  padding: 0.55rem;
+  color: #fff;
+}
