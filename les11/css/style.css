@@ -1,0 +1,75 @@
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.main{
+	text-align: center;
+}
+
+.one, .two, .three, .four{
+	width: 200px;
+	height: 200px;
+	margin: 15px;
+	display: inline-block;
+}
+.one{
+	background: url(../img/05.png);
+}
+.two{
+	background: url(../img/bg-image.jpg);
+}
+.three{
+	background: url(../img/main.jpg);
+}
+.four{
+	background: url(../img/rast21.jpeg);
+}
+button{
+	background-color:#FFCC00 ;
+	width: 60%;
+	padding: 10px;
+	margin-top: 10px;
+	color: #FF2B2B;
+	text-shadow: 1px 1px 2px #F8173E;
+	font-size: 16px;
+	border: none;
+	box-shadow: 1px 1px 4px #000;
+}
+.oneone, .twotwo, .treethree, .fourfour{
+	opacity: -1;
+	height: 100%;
+	padding-top: 30%;
+	transition: all 2s;
+}
+p{
+color: #aeaeae;
+}
+
+.oneone:hover{
+	opacity: 1;
+	background-color: rgba(0,0,0, .3);
+}
+.twotwo:hover, .two:hover{
+ width: 210px;
+ height: 210px;
+ opacity: 1;
+}
+p:hover{
+	color: red;
+}
+ .three:hover{
+ 	border: 2px solid #aeaeae;
+ }
+ .treethree:hover{
+ 	opacity: 1;
+ }
+ .four:hover{
+  margin-left: 30px;
+  box-shadow: 2px 3px 6px #aeaeae;
+ }
+.fourfour:hover{
+	opacity: 1;
+}
