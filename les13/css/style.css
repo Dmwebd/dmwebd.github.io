@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-Regular.eot');
+  src: url('../fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton-Regular.woff2') format('woff2'), url('../fonts/Panton-Regular.woff') format('woff'), url('../fonts/Panton-Regular.ttf') format('truetype'), url('../fonts/Panton-Regular.svg#Panton-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Panton';
+}
+li {
+  list-style: none;
+}
+.header {
+  width: 100wh;
+}
+.header__top {
+  text-align: center;
+  padding: 10px;
+}
+.header__top-h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  vertical-align: middle;
+  animation-iteration-count: 2;
+  animation-duration: 3s !important;
+}
+.header__top-phone {
+  font-size: 17px;
+  animation-iteration-count: 2;
+  animation-duration: 3s !important;
+}
+.header__top-btn {
+  text-decoration: none;
+  color: #000;
+  padding: 6px 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.header__bot {
+  background-color: #292d30;
+  text-align: center;
+  width: 100vw;
+}
+.header__bot-nav-li {
+  color: #fff;
+  display: inline-block;
+  font-size: 17px;
+  margin-right: 25px;
+}
+.header__bot-nav-li-last {
+  margin-right: 0;
+}
+.main {
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100wh;
+  height: 111vh;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+}
+.main__h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.main__h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0;
+}
+.main__p {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.main__p-info {
+  font-style: 14px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.main__p-info-img {
+  width: 30px;
+  position: absolute;
+  top: 40%;
+}
+.main__p-info-recomend {
+  font-size: 14px;
+  margin-top: 100px;
+}
+.main__btn {
+  text-decoration: none;
+  padding: 10px 50px;
+  border-radius: 20px;
+  background-color: #059feb;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 50px;
+}

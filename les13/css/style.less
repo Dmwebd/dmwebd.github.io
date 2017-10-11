@@ -1,0 +1,118 @@
+@font-face {
+	font-family: 'Panton';
+	src: url('../fonts/Panton-Regular.eot');
+	src: url('../fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Panton-Regular.woff2') format('woff2'),
+		url('../fonts/Panton-Regular.woff') format('woff'),
+		url('../fonts/Panton-Regular.ttf') format('truetype'),
+		url('../fonts/Panton-Regular.svg#Panton-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+	font-family: 'Panton';
+}
+li{
+	list-style: none;
+}
+// --------------------
+.header{
+	width: 100wh;
+	&__top{
+		text-align: center;
+		padding:10px;
+		&-h3{
+			text-transform: uppercase;
+			font-size: 16px;
+			vertical-align: middle;
+			animation-iteration-count:2;
+			animation-duration: 4s;
+		}
+		&-phone{
+			font-size:17px;
+			animation-iteration-count:2;
+			animation-duration: 2s;
+		}
+		&-btn{
+			text-decoration: none;
+			color: #000;
+			padding: 6px 15px;
+			border:1px solid #000;
+			border-radius: 10px;
+		}
+	}
+	&__bot{
+		background-color: #292d30;
+		text-align: center;
+		width: 100vw;
+		&-nav{
+			&-li{
+				color:#fff;
+				display: inline-block;
+				font-size: 17px;
+				margin-right: 25px;
+				&-last{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+.main{
+	background: url(../img/bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100wh;
+	height: 111vh;
+	text-align: center;
+	color:#fff;
+	padding-top: 150px;
+	&__h1{
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size:60px;
+		text-transform: uppercase;
+
+	}
+	&__h3{
+		text-transform: uppercase;
+		font-size:18px;
+		margin: 0;
+	}
+	&__p{
+		text-transform: uppercase;
+		font-size:14px;
+	}
+
+	&__p-info{
+		font-style: 14px;
+		margin-top: 70px;
+		margin-bottom:40px;
+		position: relative;
+		&-img{
+			width: 30px;
+			position: absolute;
+			top:40%;
+		}
+		&-recomend{
+		font-size: 14px;
+		margin-top: 100px;
+		}
+		
+	}
+	&__btn{
+		text-decoration: none;
+		padding:10px 50px;
+		border-radius:20px;
+		background-color: #059feb;
+		font-size: 16px;
+		text-transform: uppercase;
+		color:#fff;
+		margin-bottom: 50px;
+	}
+	
+}
