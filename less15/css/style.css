@@ -303,6 +303,9 @@ body {
   }
 }
 @media (max-width: 360px) {
+  body,html{
+		overflow-x:hidden;
+	}
   .header__row-top-logo {
     margin-right: 1rem;
     line-height: 1.3;
