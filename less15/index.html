@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>les15</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
   <div class="header">
@@ -24,14 +26,14 @@
           <span>8 (843) 212-11-07</span>
         </div>
       </div>
-      <h2 class="header__h2">Получите денежный займ под залог ПТС за 15 минут <br> в размере до 90% от стоимости автомобиля</h2>
+      <h2 class="header__h2 animated lightSpeedIn">Получите денежный займ под залог ПТС за 15 минут <br> в размере до 90% от стоимости автомобиля</h2>
       <div class="header__form-block">
-        <ul>
+        <ul class="animated fadeInLeft">
           <li>Авто останется у вас</li>
           <li>Бесплатная оценка автомобиля</li>
           <li>Ни одного случая принудительного изъятия залога</li>
         </ul>
-        <form action="#">
+        <form action="#" class="animated fadeInRight">
           <p>Получите <br>бесплатную консультацию <br> по быстрым займам</p>
           <input class="input-items" type="text" placeholder="Имя...">
           <input class="input-phone" type="phone" placeholder="Телефон...">
@@ -43,38 +45,96 @@
   </div>
   <div class="main">
     <div class="container container-main">
-      <div class="main__items">
+      <div class="main__items wow fadeInUp" data-wow-delay='0.2s'>
           <div class="main__items-icon">
             <img src="img/icon/auto.png" alt="Описание"/>
           </div>
   
             <p class="main__items-text">Авто остается у вас</p>
     </div>
-    <div class="main__items">
-          <div class="main__items-icon">
-            <img src="img/icon/auto.png" alt="Описание"/>
+    <div class="main__items wow fadeInUp" data-wow-delay='0.3s'>
+          <div class="main__items-icon ">
+            <img src="img/icon/money.png" alt="Описание"/>
           </div>
   
             <p class="main__items-text">Нам не важна <br>
               кредитная история
               </p>
     </div>
-    <div class="main__items">
+    <div class="main__items  wow fadeInUp" data-wow-delay='0.4s'>
           <div class="main__items-icon">
-            <img src="img/icon/auto.png" alt="Описание"/>
+            <img src="img/icon/money-2.png" alt="Описание"/>
           </div>
   
             <p class="main__items-text">Вы получите сумму в <br> размере до 90% от <br> стоимость автомобиля
             </p>
     </div>
-    <div class="main__items">
+    <div class="main__items  wow fadeInUp" data-wow-delay='0.5s'>
           <div class="main__items-icon">
-            <img src="img/icon/auto.png" alt="Описание"/>
+            <img src="img/icon/max.png" alt="Описание"/>
           </div>
   
             <p class="main__items-text">Максимальная сумма <br> залога 3 млн
-</p>
+            </p>
+    </div>
+    <div class="main__items  wow fadeInUp" data-wow-delay='0.6s'>
+          <div class="main__items-icon">
+            <img src="img/icon/time.png" alt="Описание"/>
+          </div>
+  
+            <p class="main__items-text">Время получения <br>15 минут
+            </p>
+    </div>
+    <!-- _____-->
+    <div class="main__items wow fadeInUp" data-wow-delay='0.7s'>
+          <div class="main__items-icon">
+            <img src="img/icon/pr.png" alt="Описание"/>
+          </div>
+  
+            <p class="main__items-text">Беспроцентный <br>
+              срок 7 дней
+            </p>
+    </div>
+    <div class="main__items wow fadeInUp" data-wow-delay='0.8s'>
+          <div class="main__items-icon">
+            <img src="img/icon/search.png" alt="Описание"/>
+          </div>
+  
+            <p class="main__items-text">Бесплатная оценка <br>автомобиля
+
+            </p>
+    </div>
+    <div class="main__items wow fadeInUp" data-wow-delay='0.9s'>
+          <div class="main__items-icon">
+            <img src="img/icon/hand.png" alt="Описание"/>
+          </div>
+  
+            <p class="main__items-text">Ни одного случая <br> принудительного <br> изъятия залога
+            </p>
+    </div>
+    <div class="main__items main__items-not_float wow fadeInUp" data-wow-delay='0.9s'>
+          <div class="main__items-icon">
+            <img src="img/icon/pr4.png" alt="Описание"/>
+          </div>
+  
+            <p class="main__items-text">Ставка <br>
+            4% в месяц.
+            </p>
+    </div>
+    <div class="main__items main__items-not_float wow fadeInUp" data-wow-delay='0.9s'>
+          <div class="main__items-icon">
+            <img src="img/icon/rybin.png" alt="Описание"/>
+          </div>
+  
+            <p class="main__items-text">Полностью <br>
+              прозрачная работа
+            </p>
     </div>
   </div>
+  <script src="jquery-1.12.4.min.js"></script>
+  <script src="wow.min.js"></script>
+<script>
+       new WOW().init();
+     </script>
 </body>
 </html>

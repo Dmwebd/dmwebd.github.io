@@ -27,9 +27,13 @@ html {
   font-family: 'P22 Underground CY Pro';
   color: #fff;
 }
+body {
+  overflow-x: hidden;
+}
 .header {
   width: 100vw;
-  height: 90vh;
+  height: 100%;
+  padding-bottom: 7rem;
   background: url(../img/main.jpg) no-repeat center center;
   background-size: cover;
   padding-top: 5rem;
@@ -92,6 +96,7 @@ html {
   font-size: 3.1rem;
   font-weight: 900;
   margin-top: 3rem;
+  animation-delay: 0.8s;
 }
 .header__form-block {
   margin-top: 5rem;
@@ -104,6 +109,7 @@ html {
   list-style-image: url(../img/1.png);
   margin-right: 2.5rem;
   vertical-align: middle;
+  animation-delay: 0.8s;
 }
 .header__form-block ul li {
   font-weight: bold;
@@ -117,6 +123,7 @@ html {
   vertical-align: middle;
   border-radius: 2%;
   position: relative;
+  animation-delay: 0.8s;
 }
 .header__form-block form p {
   margin-top: 3rem;
@@ -168,7 +175,7 @@ html {
   background-size: 20%;
 }
 .container {
-  width: 117rem;
+  width: 90%;
   margin: 0 auto;
 }
 .main {
@@ -180,11 +187,15 @@ html {
 .main__items {
   width: 24%;
   height: 20rem;
-  display: inline-block;
+  float: left;
   color: #000;
   position: relative;
   padding: 1rem;
-  top: 0;
+  margin-right: 1rem;
+}
+.main__items-not_float {
+  float: none;
+  display: inline-block;
 }
 .main__items p {
   font-size: 1.5rem;
@@ -209,4 +220,115 @@ html {
 .container-main {
   position: relative;
   transform: translateY(0%);
+  width: 100%;
+}
+@media (max-width: 1273px) {
+  .header__row-top-logo {
+    margin-right: 23%;
+    margin-right: 0;
+  }
+  .header__row-top-phone {
+    float: right;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 7px;
+  }
+  .header__row-top-logo {
+    margin-right: 0;
+  }
+  .main__items {
+    width: 32%;
+  }
+}
+@media (max-width: 820px) {
+  html {
+    font-size: 10px;
+  }
+  .header {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+  .header__row-top-logo {
+    margin-right: 28rem;
+  }
+  .header__row-top-logo {
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+  .header__row-top-phone {
+    position: relative;
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .header__h2 {
+    font-size: 2rem;
+    display: block;
+  }
+  .header__form-block ul {
+    list-style-image: none;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .header__form-block form {
+    padding-top: 1rem;
+  }
+  .header__money-img {
+    position: absolute;
+    bottom: -7rem;
+    left: 50%;
+    width: 18rem;
+    transform: translateX(-50%);
+  }
+  .container-main {
+    width: 100%;
+  }
+  .main__items {
+    width: 48%;
+  }
+}
+@media (max-width: 500px) {
+  .main__items {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main__items-not_float {
+    width: 48%;
+    left: 0;
+    transform: none;
+  }
+}
+@media (max-width: 360px) {
+  .header__row-top-logo {
+    margin-right: 1rem;
+    line-height: 1.3;
+  }
+  .header__row-top-phone button {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2rem;
+  }
+  .header__h2 {
+    line-height: 1.3;
+    margin-right: 1rem;
+  }
+  .header__form-block ul {
+    margin-right: 0.5rem;
+  }
+  .header__form-block form {
+    height: 28rem;
+    width: 22rem;
+    margin-right: 0.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  html {
+    font-size: 18px;
+  }
 }
