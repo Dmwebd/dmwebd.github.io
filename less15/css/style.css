@@ -299,8 +299,7 @@ body {
   }
   .main__items-not_float {
     width: 48%;
-    left: 0;
-    transform: none;
+    float:left;
   }
 }
 @media (max-width: 360px) {
