@@ -1,0 +1,70 @@
+*{
+	box-sizing: border-box;
+
+}
+body{
+	margin: 0;
+	font-size: 10px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+
+.main{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fone.jpg) no-repeat center center;
+	background-size: cover;
+}
+.container{
+	margin: 0 auto;
+	width:80%;
+	text-align: center;
+	padding-top: 3rem;
+}
+.text{
+	margin-bottom: 3rem;
+}
+.text h2{
+	text-transform: uppercase;
+	color: #0bbaf0;
+	font-size:3.3rem;
+	margin: 0;
+}
+.text p{
+	text-transform: uppercase;
+	color: #0bbaf0;
+	font-size:2.4rem;
+	margin-top: 0;
+}
+.tabs{
+	background-color:  #0bbaf0;
+	position: relative;
+	margin: 0;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	margin-top: 0.5rem;
+
+}
+.tabs a{
+	text-decoration: none;
+	color: #fff;
+	font-size:2rem;
+}
+.content{
+	text-align: center;
+position:relative;
+margin: 0rem 0.5rem;
+background-color: #fff;
+border: 4px solid #dcdcdc;
+border-top: none;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+padding: 1rem 2rem;
+display:none;
+}
+.content p{
+	font-size:1.8rem;
+	text-align: left;
+
+}
