@@ -1,0 +1,234 @@
+*{
+	box-sizing: border-box;
+
+}
+html{
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+
+}
+body{
+	margin: 0;
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+span:focus{
+	outline:0;
+}
+.modal-main{
+	width: 100%;
+	height: 100vh;
+	background: rgba(54,75,74,0.8);
+	position: relative;
+}
+.modal-link{
+	display: inline-block;
+	position:relative;
+	transform:translateY(30%);
+	left:5%;
+}
+.modal-one{
+	position:relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3rem;
+}
+.modal-two{
+	position:relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.modal-two:hover{
+	border-radius: 10%;
+	box-shadow: 0rem 0rem 1rem #000;
+	background: rgba(0,0,0,.3);
+}
+.modal-img:focus{
+	outline:0;
+}
+.modal-img img{
+	width: 7rem;
+}
+.btn-form{
+	text-decoration: none;
+	color:#fff;
+	background: rgb(108,175,173);	
+	font-size:2rem;
+	padding: 1rem 2rem;
+	border-radius:10rem;}
+.btn-form:active{
+	text-decoration: none;
+}
+.btn-form:focus{
+	text-decoration: none;
+	color:red;
+}
+.btn-form:hover{
+	color:blue;
+	text-decoration: none;
+}
+.main{
+	width: 100%;
+	height: 100vh;
+	background: rgba(108,175,173, 0.8);
+	position:fixed;
+	display: none;
+	top: 0;
+	left: 0;
+}
+.close-modal{
+	display:none;
+	position:fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+}
+.container-main{
+	margin: 0 auto;
+	width:60%;
+	text-align: center;
+	position: relative;
+}
+.save{
+	background-color: #fff;
+	position: relative;
+	transform: translateY(12%);
+	padding: 2rem;
+}
+.close-one{
+	display:block;
+	text-align: right;
+	font-size: 1rem;
+	margin:0;
+	text-decoration: none;
+	color: #aeaeae;
+}
+.save:before{
+	content: url(../img/Ellipse1.png);
+	position:absolute;
+	top: -3rem;
+    left: 7rem;
+}
+.save:after{
+	content: url(../img/Ellipse1.png);
+	position:absolute;
+	bottom: -3rem;
+    right: 6rem;
+    transform: rotate(190deg);
+}
+.save-img{
+	padding-top: 3rem;
+	display: inline-block;
+	
+}
+.save-img img{
+	width: 20rem;
+}
+.save-form{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 3rem;
+}
+.save-form h3{
+	font-size:1.5rem;
+}
+.save-form p{
+	font-size: 0.7rem;
+}
+input{
+	width: 100%;
+	height: 3rem;
+	display: block;
+	text-decoration: none;
+	border: none;
+	border-bottom: 1px solid #aeaeae;
+	padding-left: 2rem;
+	outline: none;
+	transition: all 0.5s;
+
+}
+input:hover{
+	border-bottom: 1px solid #000;
+}
+.input-1{
+	background: url(../img/Forma1.png) no-repeat center left ;
+
+}
+.input-2{
+	background: url(../img/mail.png) no-repeat center left ;
+
+}
+.input-3{
+	background: url(../img/Shape3.png) no-repeat center left ;
+
+}
+.btn-one{
+	outline: none;
+	border:none;
+	font-weight: 700;
+	margin-top: 3rem;
+	padding: 1rem 3rem;
+	background: #82c5c3;
+	color:#fff;
+	border-radius: 10rem;
+
+}
+.acc{
+	text-align: left;
+	font-size:1rem;
+	margin-top: 3rem;
+}
+.acc a{
+	text-decoration: none;
+	color:#f69a7a;
+}
+
+.error{
+	display:block;
+	border: 1px solid red;
+}
+label.error{
+	color:red;
+	font-weight: 700;
+	border:none;
+}
+
+
+.modal-content{
+	background-color: #a01d1d;
+	color:#fff;
+}
+.btn {
+    background: #ffb443;
+	margin:0;
+	font-family: 'Ubuntu', sans-serif;
+	padding: 0.5rem 2rem;
+	
+}
+.btn:focus{
+	outline:none !important;
+	outline-offset: 0;
+}
+.modal-title {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 0 0 1rem #270a9f, 0 0 1rem #270a9f,
+     0 0 2rem #270a9f, 0 0 3rem #270a9f, 0 0 4rem #270a9f,
+     0 0 2rem #fff, 0 0 7rem #270a9f;
+ }
+.spt{
+	font-size:2rem;
+	color:#fff;
+}
+.spt:focus{
+	outline:0;
+}
+.close{
+	outline:0;
+}
+// -----
