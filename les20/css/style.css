@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px !important;
+  font-family: 'Ubuntu', sans-serif !important;
+  color: #fff;
+}
+span {
+  color: #1abc9c;
+}
+.header {
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+}
+.header__content {
+  margin-top: 7rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.header p {
+  font-weight: 300;
+}
+.header__play {
+  margin: 5rem 0rem;
+}
+.header__play a {
+  color: #ffffff;
+}
+.header__form {
+  margin-bottom: 5rem;
+}
+.header__input-name,
+.header__input-email {
+  width: 18rem;
+  padding-left: 2rem;
+  height: 3.5rem;
+  outline: none;
+  color: #000;
+  border: none;
+}
+.header__input-email {
+  margin-left: -0.2rem;
+}
+.header__btn {
+  height: 3.5rem;
+  width: 13rem;
+  border: none;
+  margin-left: -0.3rem;
+  background-color: #1abc9c;
+  font-weight: 300;
+}
+.header__bottom span {
+  font-weight: 400;
+}
+.nav {
+  height: 5rem;
+  box-shadow: 0rem 0.4rem 1rem 0rem rgba(0, 0, 0, 0.3);
+}
+.nav__logo {
+  vertical-align: middle;
+  line-height: 5rem;
+  text-align: right;
+}
+.nav__list {
+  vertical-align: middle;
+  line-height: 5rem;
+}
+.nav__list ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+.nav__list ul a {
+  text-decoration: none;
+  color: #a69999;
+  text-transform: uppercase;
+  display: inline-block;
+  font-style: 1.5rem;
+  font-weight: 500;
+  margin-right: 2rem;
+}
+.nav__social {
+  height: 5rem;
+  line-height: 5rem;
+  display: inline-block;
+  padding: 0rem 1rem;
+  border-left: 1px solid #f3f3f3;
+  border-right: 1px solid #f3f3f3;
+}
+.nav__social a {
+  margin-right: 1rem;
+  font-size: 2.3rem;
+  text-decoration: none;
+}
+.product {
+  color: #939598;
+  text-align: center;
+  padding-bottom: 9rem;
+}
+.product__smile {
+  margin: 9rem 0rem 3rem 0rem;
+  font-size: 6rem;
+}
+.product__smile span {
+  color: #000;
+}
+.product__text {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+.product h2 {
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+.product__info-block {
+  margin-top: 9rem;
+}
+.product__p-icon {
+  font-size: 7rem;
+}
+.product__p-icon-1 span {
+  color: #4796b7;
+}
+.product__p-icon-2 span {
+  color: #b987e2;
+}
+.product__p-icon-3 span {
+  color: #f1438a;
+}
+.face {
+  color: #3b5998;
+}
+.twit {
+  color: #00aced;
+}
+.fa-circle-thin {
+  margin-right: 0.2rem;
+  font-size: 1rem !important;
+  vertical-align: middle;
+}
