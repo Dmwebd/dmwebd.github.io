@@ -141,3 +141,7 @@ span {
   font-size: 1rem !important;
   vertical-align: middle;
 }
+.parallax-window {
+  min-height: 37rem;
+  background: transparent;
+}
