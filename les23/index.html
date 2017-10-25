@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>les20</title>
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,700" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A04862b033bdf8aec5f268ab4a01f6d60f2a416ff3a0244ebd7c7d92b90a683d2&amp;width=100%25&amp;height=100vh&amp;lang=ru_RU&amp;scroll=true"></script>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-7 header__form">
+          <form action="#">
+            <h1>Contact</h1>
+            <input class="header__form-inp-1" type="text" placeholder="Your Email">
+            <input class="header__form-inp-2" type="text" placeholder="Company">
+            <input class="header__form-inp-3" type="text" placeholder="Subject">
+            <textarea name="message" placeholder="Your Messages" id=""  rows="3"></textarea>
+            <button>send message</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </header>
+    <script>
+      maps.ready(init);
+
+function init () {
+    // Создание экземпляра карты и его привязка к контейнеру с
+    // заданным id ("map").
+
+    var myMap;
+    ymaps.geocode('<?echo $event['address']?>').then(function (res) {
+        myMap = new ymaps.Map('map', {
+            center: res.geoObjects.get(0).geometry.getCoordinates(),
+            zoom : 16
+        }),
+        // Создаем геообъект с типом геометрии "Точка".
+        myGeoObject = new ymaps.GeoObject({
+
+        });
+
+        var myGeocoder = ymaps.geocode("<?echo $event['address']?>");
+        myGeocoder.then(
+        function (res) {
+            console.log(res.geoObjects.get(0).geometry.getCoordinates());
+            //myMap.geoObjects.add(res.geoObjects);
+            myMap.geoObjects.add(new ymaps.Placemark(
+            res.geoObjects.get(0).geometry.getCoordinates(), {
+            hintContent: '<?echo $event['title']?>',
+            balloonContent: '<?echo $event['title']?>'
+        }, {
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            //iconImageHref: 'default#shopIcon',
+            // Размеры метки.
+            //iconImageSize: [15, 26],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+
+        }))
+        }
+        );
+    });
+}
+    </script>
+  </body>
+</html>
