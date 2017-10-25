@@ -16,9 +16,9 @@ body {
   top: 0;
 }
 .header__form form {
-  margin-top: 5rem;
+  margin-top: 2rem;
   position: relative;
-  right: 3rem;
+  right: 5rem;
   height: 56rem;
   width: 54rem;
   background-color: #4d59a1;
