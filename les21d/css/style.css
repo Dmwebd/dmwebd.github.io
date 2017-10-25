@@ -10,7 +10,7 @@ body {
   background: url(../img/main.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
 }
 .header__img {
@@ -28,7 +28,7 @@ body {
 }
 .header__nav {
   position: relative;
-  margin-top: 42%;
+  margin-top: 39%;
 }
 .header__nav ul {
   list-style-type: none;
