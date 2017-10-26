@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px !important;
+  font-family: 'Ubuntu', sans-serif !important;
+  overflow-x: hidden;
+}
+.header {
+  height: 6rem;
+}
+.header__logo {
+  height: 6rem;
+  line-height: 6rem;
+}
+.header__logo img {
+  width: 13rem;
+}
+.header__nav {
+  text-align: right;
+  height: 6rem;
+  line-height: 6rem;
+}
+.header__nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+.header__nav ul a {
+  text-decoration: none;
+  display: inline-block;
+}
+.header__nav ul a li {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #818994;
+  margin-left: 3rem;
+}
+.main {
+  background-color: #65a9d8;
+}
+.main__content {
+  color: #f7f6f2;
+  padding-top: 15%;
+}
+.main__content h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 4rem;
+}
+.main__content-p-one {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.main__content-p-two {
+  font-style: 2rem;
+  margin-bottom: 3rem;
+}
+.main__content-p-two span {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  background: #ffce54;
+  border-radius: 10%;
+}
+.main__content form input {
+  height: 4rem;
+  width: 30rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  color: #000;
+}
+.main__content form button {
+  width: 8rem;
+  height: 4rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  background-color: #77c344;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+.main__img {
+  margin-top: 4rem;
+  float: right;
+}
+.main__img img {
+  width: 40rem;
+}
+.footer {
+  height: 11rem;
+  text-align: center;
+}
+.footer__firms {
+  height: 11rem;
+  line-height: 11rem;
+  vertical-align: middle;
+}
+.absolute__scene {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.absolute__scene-items {
+  position: absolute ;
+}
+.absolute__scene-items-1 {
+  top: 30% ;
+  left: 10%;
+}
+.absolute__scene-items-2 {
+  top: 40% ;
+  right: 20%;
+}
+.absolute__scene-items-2 img {
+  width: 4rem;
+}
+.absolute__scene-items-3 {
+  bottom: 8% ;
+  left: 15% ;
+}
+.absolute__scene-items-3 img {
+  width: 4rem;
+}
+.absolute__scene-items-4 {
+  bottom: 15% ;
+  right: 15%;
+}
+.absolute__scene-items-4 img {
+  width: 3rem;
+}

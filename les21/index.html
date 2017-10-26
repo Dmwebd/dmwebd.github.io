@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>les20</title>
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,700" rel="stylesheet">
+  </head>
+  <body>
+  <header class="header">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-2 header__logo">
+  				<img src="img/LOGO.png" alt="">
+  			</div>
+  			<div class="col-md-5 col-md-offset-5 header__nav">
+  				<ul>
+  					<a href="#">
+  						<li>How it works </li>
+  					</a>
+  					<a href="#">
+  						<li>About Us</li>
+  					</a>
+  					<a href="#">
+  						<li>Contact Us</li>
+  					</a>
+  					<a href="#">
+  						<li>Blog</li>
+  					</a>
+  				</ul>
+  			</div>
+  		</div>	
+  	</div>
+  </header>
+  <section class="main">
+  <div id="scene" class="absolute__scene" data-relative-input="false">
+  <div data-depth="0.2" class="absolute__scene-items absolute__scene-items-1" data-relative-input="false"><img src="img/object.png" alt=""></div>
+  <div data-depth="0.4" class="absolute__scene-items absolute__scene-items-2"><img src="img/object.png" alt=""></div>
+  <div data-depth="0.6" class="absolute__scene-items absolute__scene-items-3"><img src="img/object.png" alt=""></div>
+  <div data-depth="0.8" class="absolute__scene-items absolute__scene-items-4"><img src="img/object2.png" alt=""></div>
+</div>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6 main__content">
+  				<h1>Track your next <br>
+					fuel shops</h1>
+				<p class="main__content-p-one">
+					Monitor and Alert on all petrol bunks near to you 
+				</p>
+				<p class="main__content-p-two">
+					Signup For <span>free</span>  
+				</p>
+				<form action="#">
+					<input type="email" placeholder="Your E-mail  Adress">
+					<button >signup</button>
+				</form>
+  			</div>
+  			<div class="col-md-6 main__img">
+  				<img src="img/hand.png" alt="">
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  <footer class="footer">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-2 col-md-offset-1 footer__firms"><img src="img/eve.png" alt=""></div>
+  			<div class="col-md-2 footer__firms"><img src="img/microsoft.png" alt=""></div>
+  			<div class="col-md-2 footer__firms"><img src="img/google.png" alt=""></div>
+  			<div class="col-md-2 footer__firms"><img src="img/sony.png" alt=""></div>
+  			<div class="col-md-2 footer__firms"><img src="img/fire.png" alt=""></div>
+  		</div>
+  	</div>
+  </footer>
+	
+
+
+   
+    <script src="js/jquery-1.11.3.js">
+	</script>
+	<script src="js/parallax.js"></script>
+<script>
+ 
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+  </script>
+  </body>
+</html>
