@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>les28</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="price">
+          <div class="row">
+            <div class="col-md-1 col-md-offset-11 ccolose">&#10006;</div>
+            <div class="row row-2">
+              <div class="col-md-6 img-box">
+                <img src="img/1.png" alt="">
+              </div>
+              <div class="col-md-6 content-box">
+                <h2>Стул “Венеция”</h2>
+                <h4>ограниченный выпуск</h4>
+                <h3>4 200 p.</h3>
+                  <p>Сайт рыбатекст поможет дизайнеру,<br> верстальщику, вебмастеру сгенерировать<br> несколько абзацев более менее осмысленного <br>текста рыбы на русском языке, а начинающему<br> оратору отточить навык публичных выступлений<br> в домашних условиях. </p>
+                  <div class="number">
+                      <span class="minus">-</span>
+                      <input class="numb-btn" type="text" value="1" size="5"/>
+                      <span class="plus">+</span>
+                  </div>
+
+                  <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml"> 
+                    <input type="hidden" name="receiver" value="410011727432578"> 
+                    <input type="hidden" name="formcomment" value="Покупка товара"> 
+                    <input type="hidden" name="short-dest" value="Проект На обучение> 
+                    <input type="hidden" name="label" value="$order_id"> 
+                    <input type="hidden" name="quickpay-form" value="donate"> 
+                    <input type="hidden" name="targets" value="Урок 28"> 
+                    <input type="hidden" name="sum" value="4500" data-type="number"> 
+                    <input type="hidden" name="comment" value="Хотелось бы дистанционного управления."> 
+                    <input type="hidden" name="paymentType" value="AC">
+                    <input class="btn-form" type="submit" value="Перевести"> 
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script type="text/javascript" >
+        $(document).ready(function() {
+            $('.minus').click(function () {
+                var $input = $(this).parent().find('input');
+                var count = parseInt($input.val()) - 1;
+                count = count < 1 ? 1 : count;
+                $input.val(count);
+                $input.change();
+                return false;
+            });
+            $('.plus').click(function () {
+                var $input = $(this).parent().find('input');
+                $input.val(parseInt($input.val()) + 1);
+                $input.change();
+                return false;
+            });
+        });
+    </script>
+  </body>
+</html>
