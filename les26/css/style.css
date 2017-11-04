@@ -1,0 +1,18 @@
+*{
+	box-sizing: border-box;
+}
+
+form{
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+.login,.pas, button{
+	display:block;
+	width: 300px;
+	height: 40px;
+	font-size: 20px;
+	border: 2px solid #eeeeee;
+	outline: none;
+	margin:10px 0px; 
+}
