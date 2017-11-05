@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>les17</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<div class="container">
+		<div class="save">
+			<div class="save-img">
+				<img src="img/img.png" alt="">
+			</div>
+			<form id="form" class="save-form" action="mail.php" method="POST">
+				<h3>Сохрани свой аккаунт</h3>
+				<p>Получи бесплатно неограниченное количество  <br>
+				форм, вопросов и ответов.</p>
+				<input class="input-1" type="text" name='name' id="name-inp" placeholder="Имя или никнейм">
+				<input class="input-2" type="mail" name='mail' id="email-inp" placeholder="@mail">
+				<input class="input-3" type="password" name='pass' id="pas-inp" placeholder="Пароль">
+				<button class="btn" type="submit">Сохранить 	&gt;</button>
+				<p class="acc">Уже есть аккаунт? <a href="#">Войти</a></p>
+			</form>
+		</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script>
+			$('#form').validate({
+				rules:{
+					name:{
+						required: true,
+						minlength:4
+					},
+					mail:{
+						required: true,
+						minlength:6,
+						email:true
+					},
+					pass:{
+						required: true,
+						minlength:6
+					}
+				},
+				messages:{
+					name:{
+						required: 'Это поле обязательно для заполнения',
+						minlength:'Не менее 4 символов'
+					},
+					mail:{
+						required: 'Это поле обязательно для заполнения',
+						minlength:'Не менее 6 символов',
+						email:'Введите корректный amail'
+					},
+					pass:{
+						required: 'Это поле обязательно для заполнения',
+						minlength:'Не менее 6 символов'
+					}
+				}
+			});
+
+	</script>
+</body>
+</html>
